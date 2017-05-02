@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+    <link rel="stylesheet" href="css/framework7.material.min.css">
+    <link rel="stylesheet" href="css/framework7.material.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <title>Hello World</title>
+</head>
+
+<body class="theme-deeppurple">
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        <div class="navbar">
+            <div class="navbar-inner">
+                <div class="center">
+                    MENU
+                </div>
+            </div>
+        </div>
+        <!-- Accordion -->
+        <div class="list-block accordion-list">
+            <ul>
+                <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-inner">
+                        <div class="item-media">
+                            <i class="icon f7-icons color-purple">home_fill</i>
+                        </div>
+                        <div class="item-title">Konsep PBO</div>
+                    </div></a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <ul>
+                                <li><a href="materi.html" class="link close-panel">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">eye</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            Materi
+                                        </div>
+                                    </div></a>
+                                </li>
+                                <li><a href="latihan.html" class="link close-panel">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">eye</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            Latihan
+                                        </div>
+                                    </div></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-inner">
+                        <div class="item-media">
+                            <i class="icon f7-icons color-purple">home_fill</i>
+                        </div>
+                        <div class="item-title">Class, Method, Objek</div>
+                    </div></a>
+                    <div class="accordion-item-content">
+
+                        <div class="content-block">
+                            <ul>
+                                <li><a href="materi1.html" class="link close-panel">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">eye</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            Materi
+                                        </div>
+                                    </div></a>
+                                </li>
+                                <li><a href="latihan1.html" class="link close-panel">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">eye</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            Latihan
+                                        </div>
+                                    </div></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-inner">
+                        <div class="item-media">
+                            <i class="icon f7-icons color-purple">home_fill</i>
+                        </div>
+                        <div class="item-title">Enkapsulasi</div>
+                    </div></a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <ul>
+                                <li><a href="materi2.html" class="link close-panel">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">eye</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            Materi
+                                        </div>
+                                    </div></a>
+                                </li>
+                                <li><a href="latihan2.html" class="link close-panel">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">eye</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            Latihan
+                                        </div>
+                                    </div></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion-item"><a href="#" class="item-content item-link">
+                    <div class="item-inner">
+                        <div class="item-media">
+                            <i class="icon f7-icons color-purple">home_fill</i>
+                        </div>
+                        <div class="item-title">Pewarisan</div>
+                    </div></a>
+                    <div class="accordion-item-content">
+                        <div class="content-block">
+                            <ul>
+                                <li><a href="materi3.html" class="link close-panel">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">eye</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            Materi
+                                        </div>
+                                    </div></a>
+                                </li>
+                                <li><a href="latihan3.html" class="link close-panel">
+                                    <div class="item-content">
+                                        <div class="item-media">
+                                            <i class="icon f7-icons">eye</i>
+                                        </div>
+                                        <div class="item-inner">
+                                            Latihan
+                                        </div>
+                                    </div></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="evaluasi.html" class="item-content item-link close-panel">
+                    <div class="item-inner">
+                        <div class="item-media">
+                            <i class="icon f7-icons color-purple">flag_fill</i>
+                        </div>
+                        <div class="item-title">Evaluasi</div>
+                    </div></a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+
+    <div class="views">
+        <div class="view view-main">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center">
+                        <a>
+                            <i class="icon f7-icons open-panel" style="text-decoration: none; color: white;">menu</i>
+                        </a>
+                    </div>
+                    <div class="right" style="margin-right: 15px;">
+                        <a class="back">
+                            <i class="icon f7-icons" style="text-decoration: none; color: white;">arrow_left</i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pages navbar-through toolbar-through">
+            <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page">
+                <!-- Scrollable page content -->
+                    <div class="page-content" style="background: #e283ff;">
+                        <div class="content-block" style="color: #fff; margin-top: 0px;">
+                            <div class="content-block-inner" style="background: #af36c6;">
+                               <center><h1>HANDOUT PEMROGRAMAN BERORIENTASI OBJEK</h1></center>  
+                            </div>
+                        </div>                        
+                            <center><img src="./img/logo.png" class="swiper-image"></center>
+                        <div class="content-block">
+                            <a href="menu.html" class="button button-fill">Mulai</a>
+                                <br>
+                            <a href="petunjuk.html" class="button button-fill color-indigo pb-popup">Pentunjuk Penggunaan</a>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Popup Zone -->
+        <!-- Bab 1 -->
+            <!-- Analogi -->
+        <div class="popup popup-analogi">
+            <div class="content-block" style="background: #af36c6;">
+                <div class="content-block-inner">
+                    <a href="#" class="close-popup"><i class="icon f7-icons color-white">close</i></a>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="content-block-title">
+                    <center><h3>Analogi Objek</h3></center>
+                </div>
+                <div class="content-block-inner">
+                    <p class="text-format">Sebuah objek dapat diibaratkan sebagai departemen di dalam sebuah perusahaan bisnis. Contoh 
+                        Departemen:</p>
+                        <ul style="list-style-type: circle;">
+                            <li><p>Penjualan</p></li>
+                            <li><p>Personalia</p></li>
+                        </ul> 
+                    <p class="text-format">Jika dari departemen penjualan ingin mendapat data salesmen, maka yang akan didatangi adalah departemen personalia. Untuk urusan yang memberikan data salesmen merupakan urusan internal dari personalia.
+                    </p>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="content-block-inner">
+                    <a href="#" class="button button-fill color-purple close-popup">Close</a>
+                </div>
+            </div>
+        </div>
+            <!-- Konsep Object Oriented -->
+        <div class="popup popup-konsep">
+            <div class="content-block" style="background: #af36c6;">
+                <div class="content-block-inner">
+                    <a href="#" class="close-popup"><i class="icon f7-icons color-white">close</i></a>
+                </div>
+            </div>
+            <div class="content-block">
+                <ul style="list-style-type: disc;">
+                    <li>
+                        <p><b>Is Identical (because Object has own unique ID)</b></p>
+                        <p>Objek mempunyai identitas tersendiri</p>
+                    </li>
+                    <li>
+                        <p><b>Has Behavior (because Object has Method)</b></p>
+                        <p>Objek mempunyai sifat-sifat yang khusus </p>
+                    </li>
+                    <li>
+                        <p><b>Has State (because Object has instance parameter)</b></p>
+                        <p>Objek mempunyai ukuran yang baku. Secara umum relasi object dapat dibedakan menjadi tiga dasar hubungan yaitu :</p>
+                        <ul>
+                            <li><p><b>Is-a (Generalization, Realization: Inheritance)</b></p></li>
+                            <li><p><b>Has-a (Association)</b></p></li>
+                            <li><p><b>Others (Association , Dependency)</b></p></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-block">
+                <div class="content-block-inner">
+                    <a href="#" class="button button-fill color-purple close-popup">Close</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bab 2 -->
+            <!-- Contoh Class n Objek -->
+        <div class="popup popup-contoh">
+            <div class="content-block" style="background: #af36c6;">
+                <div class="content-block-inner">
+                    <a href="#" class="close-popup"><i class="icon f7-icons color-white">close</i></a>
+                </div>
+            </div>
+            <div class="content-block">
+                <div class="content-block-title">
+                    <center><h3>Contoh Class dan Objek</h3></center>
+                </div>
+                <div class="content-block-inner">
+                    <p class="text-format">
+                        Kita memiliki sebuah class mobil dimana dapat digunakan untuk medefinisikan beberapa objek mobil. Pada tabel dibawah, mobil A dan mobil B adalah objek dari class mobil. Class memiliki field nomor, plat, warna, manufaktur dan kecepatan yang diisi dengan nilai pada objek mobil A dan mobil B. Mobil juga dapat berakselerasi, berbelok dan melakukan rem.
+                    </p>
+                </div>
+            </div>
+            <div class="responsive">
+                <img src="../www/img/bab_2/19.jpg" alt="">
+            </div>
+            <div class="content-block">
+                <div class="content-block-inner">
+                    <a href="#" class="button button-fill color-purple close-popup">Close</a>
+                </div>
+            </div>
+        </div>
+
+    <!-- End of Zone -->
+
+    <!-- Popover Zone -->
+        <!-- Bab 1 -->
+            <!-- Pop Over Make Class-->
+        <div class="popover popover-class">
+            <div class="popover-angle"></div>
+            <div class="popover-inner">
+                <div class="content-block">
+                    <p>
+                        <code>
+                            Public class StudentRecord<br>
+                            {<br>
+                                <p class="format-text">//area penulisan kode berikutnya<p>
+                            }
+                        </code>
+                    </p>
+                </div>
+                <div class="content-block">
+                    <ul style="list-style-type: disc;">
+                        <li>
+                            <p><b>Public</b></p>
+                            <p>Class ini dapat di akses dari luar package</p>
+                        </li>
+                        <li>
+                            <p><b>Class</b></p>
+                            <p>Keyword yang digunakan untuk pembuatan Class dalam Java</p>
+                        </li>
+                        <li>
+                            <p><b>StudentRecord</b></p>
+                            <p>Identifier yang menjelaskan class</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+            <!-- Pop over atribut-->
+        <div class="popover popover-atribut">
+            <div class="popover-angle"></div>
+            <div class="popover-inner">
+                <div class="content-block">
+                    <code>
+                    <p>(modifier)(type)(name)[=(def_value)];</p>
+                    </code>
+                </div>
+            </div>
+        </div>
+           <!-- Pop over objek-->
+        <div class="popover popover-objek">
+            <div class="popover-angle"></div>
+            <div class="popover-inner">
+                <code>
+                    <p>class_name instance_name = new class_name();</p>
+                </code>
+            </div>
+        </div>
+            <!-- Pop over akses-->
+        <div class="popover popover-akses">
+            <div class="popover-angle"></div>
+            <div class="popover-inner">
+                <code>
+                    <p>String name = key.getClass().getName();</p>
+                </code>
+            </div>
+        </div>
+            <!-- Pop over akses-->
+        <div class="popover popover-declare">
+            <div class="popover-angle"></div>
+            <div class="popover-inner">
+                <code>
+                    <p>this.(instancevariablename)</p>
+                </code>
+            </div>
+        </div>
+            <!-- Pop over akses-->
+        <div class="popover popover-declare-example">
+            <div class="popover-angle"></div>
+            <div class="popover-inner">
+                <p>
+                    <code>
+                        public void set age(int age) {<br>
+                            <p class="text-format">this.age = age</p>
+                        }
+                    </code>
+                </p>
+            </div>
+        </div>
+            <!-- Pop over akses-->
+        <div class="popover popover-objek-example">
+            <div class="popover-angle"></div>
+            <div class="popover-inner">
+                <p>
+                    <code>
+                        public warna {<br>
+                            <p class="text-format">int merah = 7;</p>
+                            <p class="text-format">static double biru = 2;</p>
+                            <p class="text-format">void setname(int merah) {</p>
+                            <p class="text-format">this.merah = merah;</p>
+                            <p class="text-format">}</p>
+
+                            <p class="text-format">static void setbiru(double biru) {</p>
+                            <p class="text-format">warna.biru = biru;</p>
+                        }
+                    </code>
+                </p>
+            </div>
+        </div>
+
+        <!-- Bab 4 -->
+            <!--  Popover Pewarisan 1-->
+        <div class="popover popover-pewarisan-1">
+            <div class="popover-angle"></div>
+            <div class="popover-inner">
+                <p>
+                    <code>
+                       super()<br>
+                       super(parameter)
+                    </code>
+                </p>
+            </div>
+        </div>
+        <!--  Popover Pewarisan 2-->
+        <div class="popover popover-pewarisan-2">
+            <div class="popover-angle"></div>
+            <div class="popover-inner">
+                <p>
+                    <code>
+                       super.namaMethod(parameter)
+                    </code>
+                </p>
+            </div>
+        </div>
+
+    <!-- End of Zone -->
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
